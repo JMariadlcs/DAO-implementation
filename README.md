@@ -11,16 +11,20 @@ The workshop followed to complete this repo is [this one](https://www.youtube.co
 The repo that we are going to implement is like [this one](https://github.com/zeuslawyer/hackathon-dao-governance-demo).
 
 ## Dependencies and Set-Up
+- Start hardhat project:
+```bash
+yarn hardhat
+npm init -y
+npm install --save-dev hardhat
+```
+
 - Install dependencies:
 ```bash
 yarn add --dev hardhat @openzeppelin/contracts typescript typechain ts-node @typechain/ethers-v5 @typechain/hardhat @types/chai @types/node hardhat-deploy @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
 ```
 
-- Start hardhat project:
-```bash
-yarn hardhat
-```
-
 ## Resources
 - [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that we are going to implement.
+- [Openzeppelin github](https://github.com/OpenZeppelin/openzeppelin-contracts).
+- [Openzeppelin access contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/access).
 
