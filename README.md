@@ -23,6 +23,11 @@ npm install --save-dev hardhat
 yarn add --dev hardhat @openzeppelin/contracts typescript typechain ts-node @typechain/ethers-v5 @typechain/hardhat @types/chai @types/node hardhat-deploy @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
 ```
 
+## How to compile
+```bash
+yarn hardhat compile
+```
+
 ## Resources
 - [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that we are going to implement.
 - [Openzeppelin github](https://github.com/OpenZeppelin/openzeppelin-contracts).
