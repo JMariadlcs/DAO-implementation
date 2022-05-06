@@ -33,7 +33,16 @@ yarn hardhat compile
 ## How to deploy
 We are using the Hardhat Blockchain development network. We are not using testnets in this case.
 
+Insert the following imports inside [hardhat.config.ts](https://github.com/JMariadlcs/DAO-implementation/blob/main/hardhat.config.ts):
+```bash
+import "@typechain/hardhat"
+import "hardhat-deploy"
+import "@nomiclabs/hardhat-ethers"
+```
 
+```bash
+yarn hardhat deploy
+```
 
 ## Resources
 - [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that we are going to implement.
