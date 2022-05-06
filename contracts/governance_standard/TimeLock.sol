@@ -13,7 +13,5 @@ contract TimeLock is TimelockController {
     * - proposers: address that can propose a new proposal
     * - executors: address that can execute a new proposal once time is over
     */
-    constructor(uint256 minDelay, address[] memory proposers, address[] memory executors) TimelockController(minDelay, proposers, executors) {
-
-    }
+    constructor(uint256 minDelay, address[] memory proposers, address[] memory executors) TimelockController(minDelay, proposers, executors) {}
 }
