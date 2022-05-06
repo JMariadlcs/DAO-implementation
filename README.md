@@ -30,6 +30,11 @@ yarn add --dev hardhat @openzeppelin/contracts typescript typechain ts-node @typ
 yarn hardhat compile
 ```
 
+## How to deploy
+We are using the Hardhat Blockchain development network. We are not using testnets in this case.
+
+
+
 ## Resources
 - [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that we are going to implement.
 - [Openzeppelin github](https://github.com/OpenZeppelin/openzeppelin-contracts).

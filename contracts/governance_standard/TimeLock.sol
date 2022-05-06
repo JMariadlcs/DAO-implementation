@@ -8,10 +8,10 @@ import "@openzeppelin/contracts/governance/TimelockController.sol";
 
 contract TimeLock is TimelockController {
 
-     /**
+    /**
     * @dev
-    * - proposers: address that can propose a new proposal
-    * - executors: address that can execute a new proposal once time is over
+    * - proposers: addresses that can propose a new proposal
+    * - executors: addresses that can execute a new proposal once time is over
     */
     constructor(uint256 minDelay, address[] memory proposers, address[] memory executors) TimelockController(minDelay, proposers, executors) {}
 }
