@@ -13,10 +13,10 @@ const deployGovernanceToken: DeployFunction = async(hre: HardhatRuntimeEnvironme
         from: deployer,
         args: [],
         log: true,
-        // waitConfirmations: 3
+        // waitConfirmations: 3,
     });
 
-    log(`Deployed'GovernanceToken' at ${governanceToken.address}`)
+    log(`01- 'GovernanceToken' contract deployed at ${governanceToken.address}`)
 
     // Delegate tokens
     await delegate(governanceToken.address, deployer);
