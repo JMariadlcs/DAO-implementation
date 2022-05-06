@@ -5,3 +5,5 @@ export const QUORUM_PERCENTAGE = 4; // 5 percent
 export const MIN_DELAY = 3600;
 export const PROPOSERS: string[] = [];
 export const EXECUTORS: string[] = [];
+
+export const ADDRESS_ZERO = "";
