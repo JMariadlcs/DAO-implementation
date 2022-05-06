@@ -9,7 +9,7 @@ const deployTimeLock: DeployFunction = async(hre: HardhatRuntimeEnvironment) => 
     const { deployer } = await getNamedAccounts();
     const { deploy, log } = deployments;
 
-    log("Deploying timelock contract...");
+    log("Deploying TimeLock contract...");
     const timelock = await deploy("TimeLock", {
         from: deployer,
         args: [MIN_DELAY, PROPOSERS, EXECUTORS],
