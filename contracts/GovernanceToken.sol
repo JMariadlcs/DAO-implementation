@@ -1,5 +1,7 @@
 //SPDX-License-Identifier: MIT
 
+// Governance token Smart Contract used for voting
+
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";

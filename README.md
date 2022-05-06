@@ -7,6 +7,8 @@ There are 2 types of governance in DAOS.
 1. On-Chain Governance: by using Smart Contracts.
 2. Off-Chain Governance: Database (IPFS) + Oracles (Chainlink). 
 
+We are implementing 1. 100% On-Chain Governance.
+
 The workshop followed to complete this repo is [this one](https://www.youtube.com/watch?v=i5-3Wx_BrSA&t=482s).
 The repo that we are going to implement is like [this one](https://github.com/zeuslawyer/hackathon-dao-governance-demo).
 
@@ -32,4 +34,5 @@ yarn hardhat compile
 - [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that we are going to implement.
 - [Openzeppelin github](https://github.com/OpenZeppelin/openzeppelin-contracts).
 - [Openzeppelin access contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/access).
+- [Openzeppeling Wizard](https://docs.openzeppelin.com/contracts/4.x/wizard): used for helping on creating a secure governance mechanism.
 
