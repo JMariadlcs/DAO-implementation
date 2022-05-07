@@ -61,9 +61,10 @@ A local server is running now.
 - Open a new terminal to run the scripts and execute:
 ```bash
 yarn hardhat run scripts/propose.ts --network localhost
+yarn hardhat run scripts/vote.ts --network localhost
+yarn hardhat run scripts/queue-and-execute.ts --network localhost
 ```
 or any other script you want to execute.
-
 
 ## Resources
 - [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that we are going to implement.
