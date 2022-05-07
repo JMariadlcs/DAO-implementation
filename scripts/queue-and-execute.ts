@@ -20,7 +20,7 @@ export async function queueAndExecute(functionToCall: string, args: number[], pr
         [encodedFunctionCall],
         descriptionHash
    );
-    queueTx.wait(1);
+    await queueTx.wait(1);
     console.log("Proposal in queue!");
 
     // Jump Time again BUT -> In terms of blocks and in terms of time
@@ -37,7 +37,7 @@ export async function queueAndExecute(functionToCall: string, args: number[], pr
         descriptionHash
     );
 
-    executeTx.wait(1);
+    await executeTx.wait(1);
     console.log("Executed!");
     console.log(`Box value is ${await box.retrieve()}`);
 }

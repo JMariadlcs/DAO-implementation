@@ -30,7 +30,7 @@ export async function makeProposal(functionToCall: string, args: number[], propo
        proposalDescription
    )
 
-   const proposeReceipt = proposeTx.wait(1)
+   const proposeReceipt = await proposeTx.wait(1)
 
    // Jump time -> We are colling moveBlocks function in helpers.ts
    // BUT JUST DO THIS IN DEVELOPMENT ENVIRONMENT (LOCAL NETWORK)

@@ -24,7 +24,7 @@ const config: HardhatUserConfig = {
       chainId: 31337,
     },
     localhost: {
-      chainId: 3177,
+      chainId: 31337,
     },
   },
   namedAccounts: {
