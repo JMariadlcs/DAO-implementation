@@ -7,6 +7,7 @@
 // string memory description -> What is being proposed
 
 import { ethers } from "hardhat"
+import { FUNC, FUNC_ARGS, DESCRIPTION } from "../hardhat-helper-config"
 
 export async function makeProposal(functionToCall: string, args: number[], proposalDescription: string) {
 
@@ -28,5 +29,13 @@ export async function makeProposal(functionToCall: string, args: number[], propo
    )
 
    const proposeReceipt = proposeTx.wait(1)
-   
 };
+
+// Call makeProposal function
+makeProposal(FUNC, [FUNC_ARGS], DESCRIPTION).then(() =>
+    process.exit(0)
+).catch(err => { console.log(err), process.exit(1)
+});
+
+
+
