@@ -46,6 +46,23 @@ yarn hardhat deploy
 
 **¡¡NOTICE!!:** In [helpers.ts](https://github.com/JMariadlcs/DAO-implementation/blob/main/helpers.ts) directory you will find very usefull functions to manage local enviroment such us `moveBlocks` function.
 
+One execute a proposal a `proposal.json` is going to be generated with the information of the proposal.
+
+## How to run
+- We are running in a local environment (local host - hardhat development network).
+
+To do so:
+```bash
+yarn hardhat node
+```
+
+A local server is running now.
+
+- Open a new terminal to run the scripts and execute:
+```bash
+yarn hardhat run scripts/propose.ts
+```
+
 
 ## Resources
 - [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that we are going to implement.

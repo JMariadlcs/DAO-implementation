@@ -6,8 +6,10 @@
 // bytes[] memory calldatas -> The funciton we are calling
 // string memory description -> What is being proposed
 
-import { ethers } from "hardhat"
-import { FUNC, FUNC_ARGS, DESCRIPTION } from "../hardhat-helper-config"
+import { ethers, network } from "hardhat"
+import { FUNC, FUNC_ARGS, DESCRIPTION, VOTING_DELAY, developmentChains, PROPOSAL_FILE } from "../hardhat-helper-config"
+import { moveBlocks } from "../helpers";
+import * as fs from "fs";
 
 export async function makeProposal(functionToCall: string, args: number[], proposalDescription: string) {
 
@@ -29,12 +31,29 @@ export async function makeProposal(functionToCall: string, args: number[], propo
    )
 
    const proposeReceipt = proposeTx.wait(1)
+
+   // Jump time -> We are colling moveBlocks function in helpers.ts
+   // BUT JUST DO THIS IN DEVELOPMENT ENVIRONMENT (LOCAL NETWORK)
+   if (developmentChains.includes(network.name)) {
+      await moveBlocks(VOTING_DELAY + 1);
+   }
+
+   const proposalId = proposeReceipt.events[0].args.proposalId;
+   console.log("ProposalId is ", proposalId.toString());
+
+   // We are writing to proposal to a FILE
+   fs.writeFileSync(
+    PROPOSAL_FILE,
+    JSON.stringify({
+      [network.config.chainId!.toString()]: [proposalId.toString()],
+    })
+  );
 };
 
 // Call makeProposal function
 makeProposal(FUNC, [FUNC_ARGS], DESCRIPTION).then(() =>
     process.exit(0)
-).catch(err => { console.log(err), process.exit(1)
+).catch(err => {console.log(err), process.exit(1)
 });
 
 

@@ -8,4 +8,4 @@ export const moveBlocks = async( amount: number ) => {
         });
     }
     console.log(`Moved ${amount} blocks`);
-}
+};

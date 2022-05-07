@@ -12,3 +12,12 @@ export const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000" // no a
 export const FUNC = "store";
 export const FUNC_ARGS = 100;
 export const DESCRIPTION = "Proposal #1 - Update Box's value to 100";
+
+// Development networks (local netoworks - not testnet)
+export const developmentChains = ["hardhat", "localhost"];
+
+// PROPOSAL FILE
+export const PROPOSAL_FILE = "proposal.json";
+
+// PROPOSAL REASON
+export const VOTE_REASON = "Cause we like number 100";
