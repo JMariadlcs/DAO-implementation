@@ -9,3 +9,8 @@ export const moveBlocks = async( amount: number ) => {
     }
     console.log(`Moved ${amount} blocks`);
 };
+
+export const moveTime = async(amount:number) => {
+    await network.provider.send("evm_increaseTime", [amount]);
+    console.log(`Moved ${amount} seconds`);
+}

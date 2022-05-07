@@ -62,6 +62,7 @@ A local server is running now.
 ```bash
 yarn hardhat run scripts/propose.ts
 ```
+or any other script you want to execute.
 
 
 ## Resources

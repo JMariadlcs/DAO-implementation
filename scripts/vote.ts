@@ -7,7 +7,7 @@ const VOTE_NO = 0
 const VOTE_YES = 1;
 const VOTE_ABSTAIN = 2;
 
-export async function vote(proposalId) {
+export async function vote(proposalId: any) {
     console.log("Voting...");
 
     const governor = await ethers.getContract("GovernorContract");
