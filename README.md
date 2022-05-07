@@ -60,7 +60,7 @@ A local server is running now.
 
 - Open a new terminal to run the scripts and execute:
 ```bash
-yarn hardhat run scripts/propose.ts
+yarn hardhat run scripts/propose.ts --network localhost
 ```
 or any other script you want to execute.
 
