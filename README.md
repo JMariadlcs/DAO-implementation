@@ -44,7 +44,7 @@ import "@nomiclabs/hardhat-ethers"
 yarn hardhat deploy
 ```
 
-- **¡¡NOTICE!!:** In [helpers.ts](https://github.com/JMariadlcs/DAO-implementation/blob/main/helpers.ts) directory you will find very usefull functions to manage local enviroment such us `moveBlocks` function.
+**¡¡NOTICE!!:** In [helpers.ts](https://github.com/JMariadlcs/DAO-implementation/blob/main/helpers.ts) directory you will find very usefull functions to manage local enviroment such us `moveBlocks` function.
 
 
 ## Resources
