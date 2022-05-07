@@ -39,7 +39,7 @@ export async function queueAndExecute(functionToCall: string, args: number[], pr
 
     executeTx.wait(1);
     console.log("Executed!");
-
+    console.log(`Box value is ${await box.retrieve()}`);
 }
 
 // Call queueAndExecute function
