@@ -44,6 +44,9 @@ import "@nomiclabs/hardhat-ethers"
 yarn hardhat deploy
 ```
 
+- ¡¡NOTICE!!
+
+
 ## Resources
 - [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that we are going to implement.
 - [Openzeppelin github](https://github.com/OpenZeppelin/openzeppelin-contracts).
