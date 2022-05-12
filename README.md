@@ -67,7 +67,7 @@ yarn hardhat run scripts/queue-and-execute.ts --network localhost
 or any other script you want to execute.
 
 ## Resources
-- [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that we are going to implement.
+- [Hackathon DAO governance demo](https://github.com/zeuslawyer/hackathon-dao-governance-demo): The repo that is going to be implement.
 - [Openzeppelin github](https://github.com/OpenZeppelin/openzeppelin-contracts).
 - [Openzeppelin access contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/access).
 - [Openzeppeling Wizard](https://docs.openzeppelin.com/contracts/4.x/wizard): used for helping on creating a secure governance mechanism.
